@@ -72,12 +72,24 @@
 			function getConfirmationMain() {
 										 var retVal = confirm("Are you sure you want to go to the Registration Page?");
 										 if( retVal == true ) {
-											 document.location='html'
+											 alert("");
+											 document.location='Main.html'
 												return true;
 										 } else {
 												return false;
 										 }
 									}
+			function getConfirmationReligion() {
+									var retVal = confirm("Are you sure you want to sign your self up to the Verne Religion");
+									if( retVal == true ) {
+										alert("You have been saved");
+										document.location='Main.html'
+											return true;
+										} else {
+											alert("You will be damned");
+											return false;
+									}
+								}
 			function getConfirmationVerne() {
 				var retVal = confirm("Are you sure you want to go to the Holy Verne Page?");
 				if( retVal == true ) {
@@ -166,6 +178,7 @@
 									<iframe src="https://vnc4-my.sharepoint.com/personal/12511_vnc_qld_edu_au/_layouts/15/Doc.aspx?sourcedoc={736bef09-b3f0-4f3e-a15a-c988960ac3dc}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 									<ul class="feature-icons">
 										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppPNAOnUUyUyx9dyJkLfQSpUzmKg-NnOHPQ&usqp=CAU" alt="Verne3" style="height: 350pt; width: 350pt; padding-bottom: 40px ;" />
+										<button onclick="getConfirmationReligion();" style="margin-left: 0px ;" > <g> Join the Religion</g>
 									</ul>
 								</div>
 							</section>
