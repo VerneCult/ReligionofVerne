@@ -1,10 +1,195 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Verne Cult </title>
-  </head>
-  <body>
-    Hello fellow Venre cult members
-  </body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Verne Cult</title>
+		<style>
+		.tooltip {
+		  position: relative;
+		  display: inline-block;
+		  border: 1px solid black; /* If you want dots under the hoverable text */
+		  width: 45px;
+			height: 45px;
+		  background-color: white;
+		  color: black;
+		  text-align: center;
+		  border-radius: 100px;
+		}
+
+		/* Tooltip text */
+		.tooltip .tooltiptext {
+		  visibility: hidden;
+		  width: 350px;
+		  background-color: #6e6e6e;
+		  color: #fff;
+		  text-align: center;
+		  padding: 5px 0;
+		  border-radius: 6px;
+
+		  /* Position the tooltip text - see examples below! */
+		  position: absolute;
+		  z-index: 1;
+		}
+
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.tooltip:hover .tooltiptext {
+		  visibility: visible;
+		}
+
+		button {
+      color: #07135c;
+      background-color: white;
+      font-size: 20px;
+      margin: 25px;
+      cursor: pointer;
+      border-radius: 50px;
+      border-width: 3px;
+      padding: 35px;
+            }
+
+      button:hover {
+        background-color: #e6e6e6;
+      }
+
+		</style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="Main.css" />
+		<script>
+			function display_c(){
+				var refresh=1000;
+				mytime=setTimeout('display_ct()',refresh)
+			}
+
+			function display_ct() {
+				var x = new Date()
+				document.getElementById('ct').innerHTML = x;
+				display_c();
+			 }
+			function getConfirmationMain() {
+										 var retVal = confirm("Are you sure you want to go to the Registration Page?");
+										 if( retVal == true ) {
+											 document.location='Main.html'
+												return true;
+										 } else {
+												return false;
+										 }
+									}
+			function getConfirmationVerne() {
+				var retVal = confirm("Are you sure you want to go to the Holy Verne Page?");
+				if( retVal == true ) {
+					document.location='Verne.html'
+					return true;
+				} else {
+					return false;
+				}
+			}
+			function getConfirmationSigma() {
+				var retVal = confirm("Are you sure you want to Grind the Sigma Mindset?");
+				if( retVal == true ) {
+					document.location='Sigma.html'
+					return true;
+				} else {
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body class="is-preload" onload=display_ct();>
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDuLUt_I1RNyg7f81mNsF9nYY2aPn9WwLDAQ&usqp=CAU" alt="Verne1" /></span>
+					<h1 id="logo"><a href="#">Navigation Bar</a></h1>
+				</header>
+				<nav id="nav">
+					<h1>Number of times visited</h1>
+	        <h1><div id="CounterVisitor" style="margin-bottom: 50px;"><h1></div>
+					<ul>
+						<li><a href="#one" class="active">About This Website</a></li>
+						<li><a href="#two">Verne Cult</a></li>
+						<li><a href="#three">Sigma Mindset</a></li>
+					</ul>
+					<h1><span id='ct' ></span></h1>
+				</nav>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0rhIYBLS0XDlv-Vzng33FUzlhNT1oEmQSg&usqp=CAU" alt="Verne2"/>
+								</div>
+								<div class="container">
+									<header class="major">
+										<div class="tooltip" style="margin-left: 900px;"> <g style="font-size: 25px;">?<g> <span class="tooltiptext">This is the Homepage of the Insect Sightigns JN website. This page gives you a look into what this website is about and easy navigation to every part from just one page</span></div>
+											<script>
+							        var n = localStorage.getItem('on_load_counter');
+
+							        if (n === null) {
+							          n = 0;
+							        }
+							        n++;
+
+							        localStorage.setItem("on_load_counter", n);
+
+							        nums = n.toString().split('').map(Number);
+							        document.getElementById('CounterVisitor').innerHTML = '';
+							        for (var i of nums) {
+							          document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+							        }
+
+							        </script>
+										<h2> Venre Cult </h2>
+										<p> This is the founding place for the Verne Religion where fellow Verne followers and Sigma's unite and join the one and only true religion. </p>
+									</header>
+									<p> "The saviour that bows to no one" (Average Verne Enjoyer) </p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two">
+								<div class="container">
+									<h3> Verne Following </h3>
+									<p> Verne followers are the most intelligent people in the world as they follow Verne that's obvious. </p>
+									<iframe src="https://vnc4-my.sharepoint.com/personal/12511_vnc_qld_edu_au/_layouts/15/Doc.aspx?sourcedoc={736bef09-b3f0-4f3e-a15a-c988960ac3dc}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+									<ul class="feature-icons">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQppPNAOnUUyUyx9dyJkLfQSpUzmKg-NnOHPQ&usqp=CAU" alt="Verne3" style="height: 450pt; width: 700pt; padding-bottom: 40px ;" />
+										<button onclick="getConfirmationVerne();" style="margin-left: 0px ;" > <g>Holy Verne Page</g>
+									</ul>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="container">
+									<h3> Sigma Grind </h3>
+									<p> If you want to grind the Sigma mindset then you have come to right place </p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRowASXenAyohObZJ3DjMTxzcKcOwjRIF1otw&usqp=CAU" alt="Sigma" /></a>
+											<div class="inner">
+												<button onclick="getConfirmationSigma();" > <g>Sigma Mindset</g>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; By Verne Cult Leader.</li>
+						</div>
+					</section>
+
+			</div>
+	</body>
 </html>
